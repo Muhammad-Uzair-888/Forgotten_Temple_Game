@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "The Silent Exit.sln"
+    "dotnet.defaultSolution": "Forgotten_Temple_Game.sln"
 }
