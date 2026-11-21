@@ -43,7 +43,7 @@ namespace NEDClass2024
                 rigidBody == null ||
                 Camera == null)
             {
-                Debug.LogError("Missing Animator, Rigidbody or Camera reference.");
+                Debug.LogError("Missing Animator, Rigidbody or Camera reference!");
                 enabled = false;
                 return;
             }
@@ -59,35 +59,37 @@ namespace NEDClass2024
 
             PlayerMovementHandling(horizontal, vertical);
 
+            float animationSpeed = moveDirection.magnitude;
+
+            if (animationSpeed < 0.05f)
+                animationSpeed = 0f;
+
             playerAnimator.SetFloat(
                 AnimatorSpeedParam,
-                moveDirection.magnitude
+                animationSpeed
             );
 
             playerAnimator.SetBool(
                 AnimatorRunParam,
-                isRunning && moveDirection.sqrMagnitude > 0.01f
+                isRunning && animationSpeed > 0.1f
             );
         }
 
         private void PlayerMovementHandling(float horizontal, float vertical)
         {
-            Vector3 cameraForward = Camera.forward;
+            Vector3 cameraForward =
+                Vector3.ProjectOnPlane(Camera.forward, Vector3.up).normalized;
 
-            Vector3 cameraRight = Camera.right;
-
-            cameraForward.y = 0;
-
-            cameraRight.y = 0;
-
-            cameraForward.Normalize();
-
-            cameraRight.Normalize();
+            Vector3 cameraRight =
+                Vector3.ProjectOnPlane(Camera.right, Vector3.up).normalized;
 
             moveDirection = horizontal * cameraRight +
                             vertical * cameraForward;
 
             moveDirection = Vector3.ClampMagnitude(moveDirection, 1f);
+
+            if (moveDirection.sqrMagnitude < 0.01f)
+                moveDirection = Vector3.zero;
         }
 
         private void FixedUpdate()
@@ -105,10 +107,8 @@ namespace NEDClass2024
 
             if (moveDirection.sqrMagnitude > 0.01f)
             {
-                Quaternion targetRotation = Quaternion.LookRotation(
-                    moveDirection,
-                    Vector3.up
-                );
+                Quaternion targetRotation =
+                    Quaternion.LookRotation(moveDirection, Vector3.up);
 
                 rigidBody.MoveRotation(
                     Quaternion.Slerp(
@@ -122,9 +122,9 @@ namespace NEDClass2024
 
         private void Inputs(out float horizontal, out float vertical)
         {
-            horizontal = Input.GetAxis(horizontalAxis);
+            horizontal = Input.GetAxisRaw(horizontalAxis);
 
-            vertical = Input.GetAxis(verticalAxis);
+            vertical = Input.GetAxisRaw(verticalAxis);
 
             isRunning = Input.GetKey(KeyCode.LeftShift);
         }
