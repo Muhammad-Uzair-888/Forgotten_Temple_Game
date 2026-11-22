@@ -1,109 +1,169 @@
-
 using UnityEngine;
 
-public class ObjectGrabbable : MonoBehaviour
+namespace NEDClass2024
 {
     public enum ArtifactType
     {
-        SunDisc,
-        ScarabSeal,
-        AnkhRelic
+        Crystal,
+        Diamond,
+        Ruby
     }
 
-    [SerializeField] private ArtifactType artifactType;
-
-    private Rigidbody objectRigidbody;
-    private Collider[] objectColliders;
-
-    public ArtifactType Type => artifactType;
-    public bool IsPlaced { get; private set; }
-    public bool IsHeld { get; private set; }
-
-    private void Awake()
+    [RequireComponent(typeof(Rigidbody))]
+    public class ObjectGrabbable : MonoBehaviour
     {
-        objectRigidbody = GetComponent<Rigidbody>();
-        objectColliders = GetComponentsInChildren<Collider>();
+        #region Serialized Fields
 
-        if (objectRigidbody == null)
-            Debug.LogError("Artifact needs a Rigidbody!");
-    }
+        [Header("Artifact Settings")]
+        [SerializeField] private ArtifactType artifactType;
 
-    public bool Grab(Transform handPoint)
-    {
-        if (objectRigidbody == null || IsHeld || IsPlaced)
-            return false;
+        #endregion
 
-        IsHeld = true;
+        #region Private Fields
 
-        objectRigidbody.velocity = Vector3.zero;
-        objectRigidbody.angularVelocity = Vector3.zero;
+        private Rigidbody objectRigidbody;
+        private Collider[] objectColliders;
+        private int originalLayer;
 
-        objectRigidbody.isKinematic = true;
-        objectRigidbody.useGravity = false;
+        #endregion
 
-        SetColliders(false);
+        #region Properties
 
-        AttachAndSnap(handPoint);
+        public ArtifactType Type => artifactType;
+        public bool IsPlaced { get; private set; }
+        public bool IsHeld { get; private set; }
 
-        return true;
-    }
+        #endregion
 
-    public void Drop()
-    {
-        if (!IsHeld || IsPlaced)
-            return;
+        #region Unity Callbacks
 
-        transform.SetParent(null, true);
+        private void Awake()
+        {
+            EnsureComponents();
+            originalLayer = gameObject.layer;
 
-        IsHeld = false;
+            if (objectRigidbody == null)
+            {
+                Debug.LogError($"[ObjectGrabbable] Missing Rigidbody on {gameObject.name}!");
+            }
+        }
 
-        SetColliders(true);
+        private void EnsureComponents()
+        {
+            if (objectRigidbody == null)
+                objectRigidbody = GetComponent<Rigidbody>();
 
-        objectRigidbody.isKinematic = false;
-        objectRigidbody.useGravity = true;
+            if (objectColliders == null || objectColliders.Length == 0)
+                objectColliders = GetComponentsInChildren<Collider>();
+        }
 
-        objectRigidbody.velocity = Vector3.zero;
-        objectRigidbody.angularVelocity = Vector3.zero;
-    }
+        #endregion
 
-    public void PlaceAt(Transform socket)
-    {
-        if (!IsHeld || socket == null)
-            return;
+        #region Public Methods
 
-        AttachAndSnap(socket);
+        public bool Grab(Transform handPoint)
+        {
+            EnsureComponents();
 
-        IsHeld = false;
-        IsPlaced = true;
+            if (objectRigidbody == null || IsHeld || IsPlaced || handPoint == null)
+                return false;
 
-        objectRigidbody.velocity = Vector3.zero;
-        objectRigidbody.angularVelocity = Vector3.zero;
-        objectRigidbody.isKinematic = true;
-        objectRigidbody.useGravity = false;
+            IsHeld = true;
 
-        SetColliders(false);
-    }
+            // Zero out physics motion if dynamic
+            if (!objectRigidbody.isKinematic)
+            {
+                objectRigidbody.velocity = Vector3.zero;
+                objectRigidbody.angularVelocity = Vector3.zero;
+            }
+            objectRigidbody.isKinematic = true;
+            objectRigidbody.useGravity = false;
 
-    private void AttachAndSnap(Transform target)
-    {
-        Vector3 worldScale = transform.lossyScale;
+            // Disable colliders so it doesn't push the player or get stuck
+            SetColliders(false);
 
-        transform.SetParent(target, false);
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.identity;
+            // Attach to hand socket
+            AttachAndSnap(handPoint);
 
-        Vector3 parentScale = target.lossyScale;
+            return true;
+        }
 
-        transform.localScale = new Vector3(
-            worldScale.x / Mathf.Max(parentScale.x, 0.0001f),
-            worldScale.y / Mathf.Max(parentScale.y, 0.0001f),
-            worldScale.z / Mathf.Max(parentScale.z, 0.0001f)
-        );
-    }
+        public void Drop()
+        {
+            EnsureComponents();
 
-    private void SetColliders(bool state)
-    {
-        foreach (Collider col in objectColliders)
-            col.enabled = state;
+            if (!IsHeld || IsPlaced)
+                return;
+
+            transform.SetParent(null, true);
+            IsHeld = false;
+
+            // Re-enable colliders and physics
+            SetColliders(true);
+            objectRigidbody.isKinematic = false;
+            objectRigidbody.useGravity = true;
+            objectRigidbody.velocity = Vector3.zero;
+            objectRigidbody.angularVelocity = Vector3.zero;
+        }
+
+        public void PlaceAt(Transform socket)
+        {
+            EnsureComponents();
+
+            if (!IsHeld || socket == null)
+                return;
+
+            AttachAndSnap(socket);
+
+            IsHeld = false;
+            IsPlaced = true;
+
+            // Lock in place permanently
+            if (!objectRigidbody.isKinematic)
+            {
+                objectRigidbody.velocity = Vector3.zero;
+                objectRigidbody.angularVelocity = Vector3.zero;
+            }
+            objectRigidbody.isKinematic = true;
+            objectRigidbody.useGravity = false;
+
+            // Keep colliders off or trigger to prevent physical nudging
+            SetColliders(false);
+        }
+
+        #endregion
+
+        #region Private Methods
+
+        private void AttachAndSnap(Transform target)
+        {
+            Vector3 worldScale = transform.lossyScale;
+
+            transform.SetParent(target, false);
+            transform.localPosition = Vector3.zero;
+            transform.localRotation = Quaternion.identity;
+
+            // Preserve world scale across differently-scaled parents
+            Vector3 parentScale = target.lossyScale;
+            transform.localScale = new Vector3(
+                worldScale.x / Mathf.Max(parentScale.x, 0.0001f),
+                worldScale.y / Mathf.Max(parentScale.y, 0.0001f),
+                worldScale.z / Mathf.Max(parentScale.z, 0.0001f)
+            );
+        }
+
+        private void SetColliders(bool state)
+        {
+            if (objectColliders == null)
+                objectColliders = GetComponentsInChildren<Collider>();
+
+            foreach (Collider col in objectColliders)
+            {
+                if (col != null)
+                    col.enabled = state;
+            }
+        }
+
+        #endregion
     }
 }

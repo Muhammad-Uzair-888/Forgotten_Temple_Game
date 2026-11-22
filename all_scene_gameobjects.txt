@@ -1,0 +1,685 @@
+Total GameObjects in scene: 675
+Camera [pos=(-139.10, 6.90, -1.10), layer=Default] (Camera, AudioListener, UniversalAdditionalCameraData, ThirdPersonCamera)
+EventSystem [pos=(0.00, 0.00, 0.00), layer=Default] (EventSystem, StandaloneInputModule)
+Sphere [pos=(-129.63, 1.00, -3.40), layer=Interactable] (MeshFilter, MeshRenderer, SphereCollider, Rigidbody, ObjectGrabbable)
+PlayerRoot [pos=(-131.80, 0.05, -1.10), layer=Default] (PlayerMovement, CapsuleCollider, Rigidbody, PlayerPickupDrop)
+  HumanMale_Character_FREE [pos=(-131.80, 0.05, -1.10), layer=Default] (Animator)
+    Armature [pos=(-131.80, 0.05, -1.10), layer=Default]
+      Root_M [pos=(-131.85, 3.76, -1.10), layer=Default]
+        Hip_L [pos=(-131.83, 3.50, -0.72), layer=Default]
+          Knee_L [pos=(-131.84, 1.81, -0.67), layer=Default]
+            Ankle_L [pos=(-132.05, 0.38, -0.64), layer=Default]
+              Toes_L [pos=(-131.59, 0.14, -0.61), layer=Default]
+                ToesEnd_L [pos=(-131.38, 0.14, -0.61), layer=Default]
+        Hip_R [pos=(-131.83, 3.50, -1.48), layer=Default]
+          Knee_R [pos=(-131.84, 1.81, -1.53), layer=Default]
+            Ankle_R [pos=(-132.05, 0.38, -1.56), layer=Default]
+              Toes_R [pos=(-131.59, 0.14, -1.59), layer=Default]
+                ToesEnd_R [pos=(-131.38, 0.14, -1.59), layer=Default]
+        Spine1_M [pos=(-131.85, 4.11, -1.10), layer=Default]
+          Spine2_M [pos=(-131.87, 4.49, -1.10), layer=Default]
+            Chest_M [pos=(-131.92, 4.82, -1.10), layer=Default]
+              Neck_M [pos=(-132.10, 5.45, -1.10), layer=Default]
+                Head_M [pos=(-132.09, 5.78, -1.10), layer=Default]
+                  Eye_L [pos=(-131.55, 6.08, -0.96), layer=Default]
+                    EyeEnd_L [pos=(-131.49, 6.08, -0.94), layer=Default]
+                  Eye_R [pos=(-131.55, 6.08, -1.24), layer=Default]
+                    EyeEnd_R [pos=(-131.49, 6.08, -1.26), layer=Default]
+                  HeadEnd_M [pos=(-132.09, 6.58, -1.10), layer=Default]
+                  Jaw_M [pos=(-131.92, 5.95, -1.10), layer=Default]
+                    JawEnd_M [pos=(-131.49, 5.65, -1.10), layer=Default]
+                  jnt_eyeBrow_L [pos=(-131.50, 6.23, -0.92), layer=Default]
+                    jnt_eyeBrow_LEnd_L [pos=(-131.47, 6.22, -0.89), layer=Default]
+                  jnt_eyeBrow_R [pos=(-131.50, 6.23, -1.28), layer=Default]
+                    jnt_eyeBrowEnd_R [pos=(-131.47, 6.22, -1.31), layer=Default]
+                  jnt_eyelid_L [pos=(-131.56, 6.14, -0.96), layer=Default]
+                    jnt_eyelid_LEnd_L [pos=(-131.50, 6.12, -0.93), layer=Default]
+                  jnt_eyelid_R [pos=(-131.56, 6.14, -1.24), layer=Default]
+                    jnt_eyelidEnd_R [pos=(-131.50, 6.12, -1.27), layer=Default]
+              Scapula_L [pos=(-132.11, 5.14, -0.95), layer=Default]
+                Shoulder_L [pos=(-132.11, 5.13, -0.39), layer=Default]
+                  Elbow_L [pos=(-132.42, 5.09, 0.56), layer=Default]
+                    Wrist_L [pos=(-132.44, 5.11, 1.60), layer=Default]
+                      IndexFinger1_L [pos=(-132.28, 5.22, 2.00), layer=Default]
+                        IndexFinger2_L [pos=(-132.26, 5.20, 2.14), layer=Default]
+                          IndexFinger3_L [pos=(-132.24, 5.14, 2.28), layer=Default]
+                            IndexFinger4_L [pos=(-132.23, 5.08, 2.38), layer=Default]
+                      jointItemL [pos=(-132.43, 5.06, 1.98), layer=Default]
+                      MiddleFinger1_L [pos=(-132.38, 5.22, 2.00), layer=Default]
+                        MiddleFinger2_L [pos=(-132.37, 5.19, 2.17), layer=Default]
+                          MiddleFinger3_L [pos=(-132.37, 5.15, 2.30), layer=Default]
+                            MiddleFinger4_L [pos=(-132.36, 5.09, 2.42), layer=Default]
+                      PinkyFinger1_L [pos=(-132.58, 5.19, 2.02), layer=Default]
+                        PinkyFinger2_L [pos=(-132.60, 5.14, 2.16), layer=Default]
+                          PinkyFinger3_L [pos=(-132.60, 5.10, 2.26), layer=Default]
+                            PinkyFinger4_L [pos=(-132.60, 5.04, 2.35), layer=Default]
+                      RingFinger1_L [pos=(-132.48, 5.22, 2.02), layer=Default]
+                        RingFinger2_L [pos=(-132.49, 5.18, 2.18), layer=Default]
+                          RingFinger3_L [pos=(-132.49, 5.13, 2.29), layer=Default]
+                            RingFinger4_L [pos=(-132.48, 5.07, 2.40), layer=Default]
+                      ThumbFinger1_L [pos=(-132.28, 5.10, 1.64), layer=Default]
+                        ThumbFinger2_L [pos=(-132.19, 5.02, 1.80), layer=Default]
+                          ThumbFinger3_L [pos=(-132.12, 4.94, 1.91), layer=Default]
+                            ThumbFinger4_L [pos=(-132.08, 4.88, 2.03), layer=Default]
+              Scapula_R [pos=(-132.11, 5.14, -1.25), layer=Default]
+                Shoulder_R [pos=(-132.11, 5.13, -1.81), layer=Default]
+                  Elbow_R [pos=(-132.42, 5.09, -2.76), layer=Default]
+                    Wrist_R [pos=(-132.44, 5.11, -3.80), layer=Default]
+                      IndexFinger1_R [pos=(-132.28, 5.22, -4.20), layer=Default]
+                        IndexFinger2_R [pos=(-132.26, 5.20, -4.34), layer=Default]
+                          IndexFinger3_R [pos=(-132.24, 5.14, -4.48), layer=Default]
+                            IndexFinger4_R [pos=(-132.23, 5.08, -4.58), layer=Default]
+                      jointItemR [pos=(-132.43, 5.06, -4.18), layer=Default]
+                        ArtifactHoldPoint [pos=(-132.30, 5.02, -4.18), layer=Default]
+                      MiddleFinger1_R [pos=(-132.38, 5.22, -4.20), layer=Default]
+                        MiddleFinger2_R [pos=(-132.37, 5.19, -4.37), layer=Default]
+                          MiddleFinger3_R [pos=(-132.37, 5.15, -4.50), layer=Default]
+                            MiddleFinger4_R [pos=(-132.36, 5.09, -4.62), layer=Default]
+                      PinkyFinger1_R [pos=(-132.58, 5.19, -4.22), layer=Default]
+                        PinkyFinger2_R [pos=(-132.60, 5.14, -4.36), layer=Default]
+                          PinkyFinger3_R [pos=(-132.60, 5.10, -4.46), layer=Default]
+                            PinkyFinger4_R [pos=(-132.60, 5.04, -4.55), layer=Default]
+                      RingFinger1_R [pos=(-132.48, 5.22, -4.22), layer=Default]
+                        RingFinger2_R [pos=(-132.49, 5.18, -4.38), layer=Default]
+                          RingFinger3_R [pos=(-132.49, 5.13, -4.49), layer=Default]
+                            RingFinger4_R [pos=(-132.48, 5.07, -4.60), layer=Default]
+                      ThumbFinger1_R [pos=(-132.28, 5.10, -3.84), layer=Default]
+                        ThumbFinger2_R [pos=(-132.19, 5.02, -4.00), layer=Default]
+                          ThumbFinger3_R [pos=(-132.12, 4.94, -4.11), layer=Default]
+                            ThumbFinger4_R [pos=(-132.08, 4.88, -4.23), layer=Default]
+    Mesh [pos=(-132.12, 0.05, -1.10), layer=Default]
+      Accessories [pos=(-132.12, 0.05, -1.10), layer=Default]
+        Underwear [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+      Body [pos=(-132.12, 0.05, -1.10), layer=Default]
+        Head [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Neck [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Chest [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Arms [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Hands [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Legs [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Feet [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+      Customization [pos=(-132.12, 0.05, -1.10), layer=Default]
+        Face [pos=(-132.12, 0.05, -1.10), layer=Default]
+          Eyebrows [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+          Eyelashes [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+          Eyes [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Hair [pos=(-132.12, 0.05, -1.10), layer=Default]
+          Hair7 [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Beards [pos=(-132.12, 0.05, -1.10), layer=Default]
+          Beard6 [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Moustaches [pos=(-132.12, 0.05, -1.10), layer=Default]
+          Moustache4 [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+    Armors [pos=(-131.80, 0.05, -1.10), layer=Default]
+      StarterClothes [pos=(-131.80, 0.05, -1.10), layer=Default]
+        Starter_Boots [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Starter_Chest [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        Starter_Pants [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+      Plate1 [pos=(-131.80, 0.05, -1.10), layer=Default]
+        PlateSet1_Boots [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        PlateSet1_Chest [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        PlateSet1_Gloves [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        PlateSet1_Helmet [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        PlateSet1_Pants [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+        PlateSet1_Shoulders [pos=(-131.80, 0.05, -1.10), layer=Default] (SkinnedMeshRenderer)
+Canvas [pos=(960.00, 540.00, 0.00), layer=UI] (Canvas, CanvasScaler, GraphicRaycaster)
+  CenterDot [pos=(960.00, 540.00, 0.00), layer=UI] (CanvasRenderer, TextMeshProUGUI)
+TempleMap [pos=(0.00, 0.00, 0.00), layer=Default]
+  01_Floors [pos=(0.00, 0.00, 0.00), layer=Default]
+    Cube.003 [pos=(-144.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(-128.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx6 [pos=(-96.00, 0.00, -24.00), layer=Default]
+      Cube.003 [pos=(-96.00, 0.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 0.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 0.00, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-96.00, 0.00, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 0.00, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 0.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-96.00, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx6 [pos=(-96.00, 0.00, 24.00), layer=Default]
+      Cube.003 [pos=(-96.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 0.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-96.00, 0.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 0.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 0.00, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 0.00, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-96.00, 0.00, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(-64.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(-48.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(-32.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx6 [pos=(0.00, 0.00, 0.00), layer=Default]
+      Cube.003 [pos=(0.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-16.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-16.00, 0.00, 16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(0.00, 0.00, 16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(16.00, 0.00, 16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(16.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(16.00, 0.00, -16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-16.00, 0.00, -16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(0.00, 0.00, -16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(0.00, 0.00, 32.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(-16.00, 0.00, 56.00), layer=Default]
+      Cube.003 [pos=(-8.00, 0.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 0.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 0.00, 64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-8.00, 0.00, 64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(16.00, 0.00, 56.00), layer=Default]
+      Cube.003 [pos=(24.00, 0.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 0.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 0.00, 64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(24.00, 0.00, 64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(-16.00, 0.00, 88.00), layer=Default]
+      Cube.003 [pos=(-8.00, 0.00, 80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 0.00, 80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 0.00, 96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-8.00, 0.00, 96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(16.00, 0.00, 88.00), layer=Default]
+      Cube.003 [pos=(24.00, 0.00, 80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 0.00, 80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 0.00, 96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(24.00, 0.00, 96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(0.00, 0.00, -32.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(-16.00, 0.00, -56.00), layer=Default]
+      Cube.003 [pos=(-8.00, 0.00, -64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 0.00, -64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 0.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-8.00, 0.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(16.00, 0.00, -56.00), layer=Default]
+      Cube.003 [pos=(24.00, 0.00, -64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 0.00, -64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 0.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(24.00, 0.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(-16.00, 0.00, -88.00), layer=Default]
+      Cube.003 [pos=(-8.00, 0.00, -96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 0.00, -96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 0.00, -80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-8.00, 0.00, -80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(16.00, 0.00, -88.00), layer=Default]
+      Cube.003 [pos=(24.00, 0.00, -96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 0.00, -96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 0.00, -80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(24.00, 0.00, -80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(31.36, 0.00, -0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(47.36, 0.00, -0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(63.36, 0.00, -0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(79.36, 0.00, -0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(95.36, 0.00, -0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(111.36, 0.00, -0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(127.36, 0.00, -0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(143.36, 0.00, -0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+  01_Floors (1) [pos=(0.00, 18.40, 0.00), layer=Default]
+    Cube.003 [pos=(-144.00, 18.40, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(-128.00, 18.40, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx6 [pos=(-96.00, 18.40, 24.00), layer=Default]
+      Cube.003 [pos=(-96.00, 18.40, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 18.40, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 18.40, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-96.00, 18.40, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 18.40, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 18.40, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 18.40, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 18.40, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-96.00, 18.40, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx6 [pos=(-96.00, 18.40, -24.00), layer=Default]
+      Cube.003 [pos=(-96.00, 18.40, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 18.40, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 18.40, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-96.00, 18.40, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 18.40, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 18.40, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-80.00, 18.40, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-112.00, 18.40, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-96.00, 18.40, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(-64.00, 18.40, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(-48.00, 18.40, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(-32.00, 18.40, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx6 [pos=(0.00, 18.40, 0.00), layer=Default]
+      Cube.003 [pos=(0.00, 18.40, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-16.00, 18.40, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-16.00, 18.40, -16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(0.00, 18.40, -16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(16.00, 18.40, -16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(16.00, 18.40, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(16.00, 18.40, 16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-16.00, 18.40, 16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(0.00, 18.40, 16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(0.00, 18.40, -32.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(-16.00, 18.40, -56.00), layer=Default]
+      Cube.003 [pos=(-8.00, 18.40, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 18.40, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 18.40, -64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-8.00, 18.40, -64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(16.00, 18.40, -56.00), layer=Default]
+      Cube.003 [pos=(24.00, 18.40, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 18.40, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 18.40, -64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(24.00, 18.40, -64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(-16.00, 18.40, -88.00), layer=Default]
+      Cube.003 [pos=(-8.00, 18.40, -80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 18.40, -80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 18.40, -96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-8.00, 18.40, -96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(16.00, 18.40, -88.00), layer=Default]
+      Cube.003 [pos=(24.00, 18.40, -80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 18.40, -80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 18.40, -96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(24.00, 18.40, -96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(0.00, 18.40, 32.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(-16.00, 18.40, 56.00), layer=Default]
+      Cube.003 [pos=(-8.00, 18.40, 64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 18.40, 64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 18.40, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-8.00, 18.40, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(16.00, 18.40, 56.00), layer=Default]
+      Cube.003 [pos=(24.00, 18.40, 64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 18.40, 64.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 18.40, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(24.00, 18.40, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(-16.00, 18.40, 88.00), layer=Default]
+      Cube.003 [pos=(-8.00, 18.40, 96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 18.40, 96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-24.00, 18.40, 80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(-8.00, 18.40, 80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    groundx4 [pos=(16.00, 18.40, 88.00), layer=Default]
+      Cube.003 [pos=(24.00, 18.40, 96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 18.40, 96.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(8.00, 18.40, 80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube.003 [pos=(24.00, 18.40, 80.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(31.36, 18.40, 0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(47.36, 18.40, 0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(63.36, 18.40, 0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(79.36, 18.40, 0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(95.36, 18.40, 0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(111.36, 18.40, 0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(127.36, 18.40, 0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.003 [pos=(143.36, 18.40, 0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+  03_InteriorWalls [pos=(0.00, 0.00, 0.00), layer=Default]
+    wall_down [pos=(-144.00, 0.00, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (3) [pos=(-144.00, 10.66, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (5) [pos=(-144.00, 10.66, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-128.00, 0.00, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (4) [pos=(-128.00, 10.66, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (6) [pos=(-128.00, 10.66, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-144.00, 0.00, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-128.00, 0.00, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-112.00, 12.00, 48.00), layer=Default]
+      wall_down_003 [pos=(-112.00, 0.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-112.00, 12.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-96.00, 12.00, 48.00), layer=Default]
+      wall_down_003 [pos=(-96.00, 0.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-96.00, 12.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-80.00, 12.00, 48.00), layer=Default]
+      wall_down_003 [pos=(-80.00, 0.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-80.00, 12.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-112.00, 12.00, -48.00), layer=Default]
+      wall_down_003 [pos=(-112.00, 0.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-112.00, 12.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-96.00, 12.00, -48.00), layer=Default]
+      wall_down_003 [pos=(-96.00, 0.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-96.00, 12.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-80.00, 12.00, -48.00), layer=Default]
+      wall_down_003 [pos=(-80.00, 0.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-80.00, 12.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-120.00, 12.00, -40.00), layer=Default]
+      wall_down_003 [pos=(-120.00, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-120.00, 12.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-120.00, 12.00, -24.00), layer=Default]
+      wall_down_003 [pos=(-120.00, 0.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-120.00, 12.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 (1) [pos=(-120.00, 12.00, -11.88), layer=Default]
+      wall_down_003 [pos=(-120.00, 0.00, -11.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-120.00, 12.00, -11.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 (3) [pos=(-72.00, 12.00, -11.88), layer=Default]
+      wall_down_003 [pos=(-72.00, 0.00, -11.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-72.00, 12.00, -11.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 (2) [pos=(-120.00, 12.00, 11.88), layer=Default]
+      wall_down_003 [pos=(-120.00, 0.00, 11.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-120.00, 12.00, 11.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 (4) [pos=(-72.00, 12.00, 11.88), layer=Default]
+      wall_down_003 [pos=(-72.00, 0.00, 11.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-72.00, 12.00, 11.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-120.00, 12.00, 24.00), layer=Default]
+      wall_down_003 [pos=(-120.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-120.00, 12.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-120.00, 12.00, 40.00), layer=Default]
+      wall_down_003 [pos=(-120.00, 0.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-120.00, 12.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-72.00, 12.00, -40.00), layer=Default]
+      wall_down_003 [pos=(-72.00, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-72.00, 12.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-72.00, 12.00, -24.00), layer=Default]
+      wall_down_003 [pos=(-72.00, 0.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-72.00, 12.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-72.00, 12.00, 24.00), layer=Default]
+      wall_down_003 [pos=(-72.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-72.00, 12.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(-120.00, 12.00, 48.00), layer=Default]
+      01 [pos=(-120.00, 12.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-120.00, 0.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(-72.00, 12.00, 48.00), layer=Default]
+      wall_down [pos=(-72.00, 12.00, 39.84), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-72.00, 12.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-72.00, 0.00, 48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-72.00, 0.00, 39.84), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(-120.00, 12.00, -48.00), layer=Default]
+      01 [pos=(-120.00, 12.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-120.00, 0.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(-72.00, 12.00, -48.00), layer=Default]
+      01 [pos=(-72.00, 12.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-72.00, 0.00, -48.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-64.00, 0.00, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (7) [pos=(-64.00, 9.90, 7.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (10) [pos=(-64.00, 9.90, -7.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-64.00, 0.00, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-48.00, 0.00, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (8) [pos=(-48.00, 9.90, 7.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (11) [pos=(-48.00, 9.90, -7.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-48.00, 0.00, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-32.00, 0.00, 8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (9) [pos=(-32.00, 9.90, 7.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (12) [pos=(-32.00, 9.90, -7.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-32.00, 0.00, -8.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-3 [pos=(-24.00, 12.00, 16.00), layer=Default]
+      wall_down_003 [pos=(-24.00, 0.00, 16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-24.00, 12.00, 16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-3 [pos=(24.00, 12.00, 16.00), layer=Default]
+      wall_down_003 [pos=(24.00, 0.00, 16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(24.00, 12.00, 15.08), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-3 [pos=(24.00, 12.00, -16.00), layer=Default]
+      wall_down_003 [pos=(24.00, 0.00, -16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(24.00, 12.00, -16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-3 [pos=(-16.00, 12.00, 24.00), layer=Default]
+      wall_down_003 [pos=(-16.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-16.00, 12.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-3 [pos=(16.00, 12.00, 24.00), layer=Default]
+      wall_down_003 [pos=(16.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(14.04, 12.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-3 [pos=(16.00, 12.00, -25.88), layer=Default]
+      wall_down_003 [pos=(16.00, 0.00, -25.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(16.00, 12.00, -25.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-3 [pos=(-24.00, 12.00, 24.00), layer=Default]
+      wall_down [pos=(-34.00, 12.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-24.00, 12.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-9.32, 12.00, 32.40), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down (5) [pos=(152.92, 10.16, -0.08), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down (2) [pos=(0.16, 12.08, 39.96), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down (7) [pos=(-0.20, 11.96, -40.04), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down (1) [pos=(7.20, 12.00, 32.40), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-24.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-34.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-3 [pos=(24.00, 12.00, 24.00), layer=Default]
+      wall_down [pos=(24.00, 12.00, 36.68), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(24.00, 12.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(13.60, 12.00, 39.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(24.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(24.00, 0.00, 42.84), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(13.60, 0.00, 39.88), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-3 [pos=(-24.00, 12.00, -26.00), layer=Default]
+      wall_down [pos=(-24.00, 12.00, -16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-24.00, 12.00, -26.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-13.60, 12.00, -26.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-24.00, 0.00, -26.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-24.00, 0.00, -16.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-13.60, 0.00, -26.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-3 [pos=(24.00, 12.00, -24.00), layer=Default]
+      01 [pos=(24.00, 12.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(24.00, 12.00, -34.40), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(24.00, 0.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(24.00, 0.00, -34.40), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-8.00, 0.00, 32.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(8.00, 0.00, 32.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-8.00, 12.00, 104.00), layer=Default]
+      wall_down_003 [pos=(-8.00, 0.00, 104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-8.00, 12.00, 104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(8.00, 12.00, 104.00), layer=Default]
+      wall_down_003 [pos=(8.00, 0.00, 104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(8.00, 12.00, 104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-24.00, 12.00, 40.00), layer=Default]
+      wall_down_003 [pos=(-31.39, 0.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-31.39, 12.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(29.44, 12.00, 39.80), layer=Default]
+      wall_down_003 [pos=(29.44, 0.00, 39.80), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(29.44, 12.00, 39.80), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-32.00, 12.00, 56.00), layer=Default]
+      wall_down_003 [pos=(-32.00, 0.00, 56.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-32.00, 12.00, 56.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-32.00, 12.00, 72.00), layer=Default]
+      wall_down_003 [pos=(-32.00, 0.00, 72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-32.00, 12.00, 72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(32.00, 12.00, 56.00), layer=Default]
+      wall_down_003 [pos=(32.00, 0.00, 56.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(32.00, 12.00, 56.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(32.00, 12.00, 72.00), layer=Default]
+      wall_down_003 [pos=(32.00, 0.00, 72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(32.00, 12.00, 72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(32.00, 12.00, 104.00), layer=Default]
+      wall_down [pos=(32.00, 12.00, 87.96), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(32.00, 12.00, 99.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(23.88, 12.00, 104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(32.00, 0.00, 99.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(32.00, 0.00, 87.96), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(23.88, 0.00, 104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 (2) [pos=(-32.01, 12.00, 103.76), layer=Default]
+      wall_down [pos=(-32.01, 12.00, 87.72), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-31.41, 12.04, 99.24), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-23.85, 12.00, 103.96), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-31.41, 0.00, 99.24), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-32.01, 0.00, 87.72), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-23.85, 0.00, 103.96), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(-32.00, 12.00, 40.00), layer=Default]
+      wall_down [pos=(-32.00, 12.00, 40.12), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-32.00, 12.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-15.48, 12.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-32.00, 0.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-32.00, 0.00, 40.12), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-15.48, 0.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(32.00, 12.00, 39.65), layer=Default]
+      01 [pos=(32.00, 12.00, 39.65), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(32.00, 12.00, 40.05), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(32.00, 0.00, 39.65), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(32.00, 0.00, 40.05), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(-8.00, 0.00, -32.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(8.00, 0.00, -32.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (1) [pos=(9.02, 11.83, -32.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (2) [pos=(-8.62, 11.36, -32.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-24.00, 12.00, -104.00), layer=Default]
+      wall_down_003 [pos=(-24.00, 0.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-24.00, 12.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-8.00, 12.00, -104.00), layer=Default]
+      wall_down_003 [pos=(-8.00, 0.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-8.00, 12.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(8.00, 12.00, -104.00), layer=Default]
+      wall_down_003 [pos=(8.00, 0.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(8.00, 12.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(24.00, 12.00, -104.00), layer=Default]
+      wall_down_003 [pos=(24.00, 0.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(24.00, 12.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-24.00, 12.00, -40.00), layer=Default]
+      wall_down_003 [pos=(-24.00, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-24.00, 12.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(24.00, 12.00, -40.00), layer=Default]
+      wall_down_003 [pos=(24.00, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(24.00, 12.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-32.00, 12.00, -88.00), layer=Default]
+      wall_down_003 [pos=(-32.00, 0.00, -88.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-32.00, 12.00, -88.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-32.00, 12.00, -72.00), layer=Default]
+      wall_down_003 [pos=(-32.00, 0.00, -72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-32.00, 12.00, -72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(-32.00, 12.00, -56.00), layer=Default]
+      wall_down_003 [pos=(-32.00, 0.00, -56.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-32.00, 12.00, -56.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(32.00, 12.00, -88.00), layer=Default]
+      wall_down_003 [pos=(32.00, 0.00, -88.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(32.00, 12.00, -88.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(32.00, 12.00, -72.00), layer=Default]
+      wall_down_003 [pos=(32.00, 0.00, -72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(32.00, 12.00, -72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_1-2 [pos=(32.00, 12.00, -56.00), layer=Default]
+      wall_down_003 [pos=(32.00, 0.00, -56.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(32.00, 12.00, -56.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(-32.00, 12.00, -48.68), layer=Default]
+      01 [pos=(-32.00, 12.00, -48.68), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-32.00, 12.00, -38.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-32.00, 0.00, -48.68), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-32.00, 0.00, -38.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(32.00, 12.00, -40.00), layer=Default]
+      wall_down [pos=(32.00, 12.00, -50.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(32.00, 12.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(13.03, 12.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(32.00, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(32.00, 0.00, -50.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(13.04, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 (1) [pos=(32.00, 12.00, -40.00), layer=Default]
+      wall_down [pos=(32.00, 12.00, -50.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(32.00, 12.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(13.03, 12.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down (1) [pos=(-11.97, 12.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(32.00, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(32.00, 0.00, -50.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(13.04, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down (2) [pos=(-11.96, 0.00, -40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(-32.00, 12.00, -104.00), layer=Default]
+      wall_down [pos=(-32.00, 12.00, -94.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-32.00, 12.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(-32.00, 0.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(-32.00, 0.00, -94.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    corner_1-2 [pos=(32.00, 12.00, -104.00), layer=Default]
+      wall_down [pos=(31.92, 12.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(32.00, 12.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      01 [pos=(32.00, 0.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      wall_down [pos=(31.92, 0.00, -104.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(34.20, 0.00, 7.72), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(34.20, 0.00, -8.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (13) [pos=(32.12, 10.20, -9.44), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (19) [pos=(32.12, 10.20, 9.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(50.20, 0.00, 7.72), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(50.20, 0.00, -8.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (14) [pos=(48.12, 10.20, -9.44), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (20) [pos=(48.12, 10.20, 9.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(66.20, 0.00, 7.72), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(66.20, 0.00, -8.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (15) [pos=(64.12, 10.20, -9.44), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (21) [pos=(64.12, 10.20, 9.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(82.20, 0.00, 7.72), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(82.20, 0.00, -8.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (16) [pos=(80.12, 10.20, -9.44), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (22) [pos=(80.12, 10.20, 9.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(98.20, 0.00, 7.72), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(98.20, 0.00, -8.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (17) [pos=(96.12, 10.20, -9.44), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (23) [pos=(96.12, 10.20, 9.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(114.20, 0.00, 7.72), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(114.20, 0.00, -8.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (18) [pos=(112.12, 10.20, -9.44), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (24) [pos=(112.12, 10.20, 9.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(130.20, 0.00, 7.72), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (25) [pos=(128.04, 10.20, 9.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(146.20, 0.00, 7.72), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (26) [pos=(144.00, 10.20, 8.96), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(130.20, 0.00, -8.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (27) [pos=(128.08, 10.20, -9.48), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down [pos=(146.20, 0.00, -8.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    wall_down (28) [pos=(144.08, 10.20, -9.48), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+  04_DoorFrames [pos=(0.00, 0.00, 0.00), layer=Default]
+    pass2 [pos=(-152.00, 0.00, 0.00), layer=Default]
+      pass_002 [pos=(-152.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_065 [pos=(-152.00, 0.00, 4.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_064 [pos=(-152.00, 0.00, -4.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass_001 [pos=(-152.00, 12.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass2 [pos=(-152.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    pass [pos=(-120.00, 0.00, 0.00), layer=Default]
+      pass_002 [pos=(-120.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass_001 [pos=(-120.00, 12.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_071 [pos=(-120.17, 10.77, 0.03), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_066 [pos=(-119.94, 11.98, 0.11), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass [pos=(-120.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    pass (1) [pos=(-70.64, 0.00, 0.00), layer=Default]
+      pass_002 [pos=(-70.64, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass_001 [pos=(-70.64, 12.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_071 [pos=(-70.81, 10.77, 0.03), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_066 [pos=(-70.58, 11.98, 0.11), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass [pos=(-70.64, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    pass (2) [pos=(-24.00, 0.00, 0.00), layer=Default]
+      pass_002 [pos=(-24.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass_001 [pos=(-24.00, 12.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass_001 (1) [pos=(24.07, 12.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass_001 (2) [pos=(0.04, 12.00, -23.98), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass_001 (3) [pos=(0.04, 12.00, 23.98), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_071 [pos=(-24.17, 10.77, 0.03), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_066 [pos=(-23.94, 11.98, 0.11), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass [pos=(-24.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    pass3 [pos=(0.00, 0.00, 24.00), layer=Default]
+      pass_002 [pos=(0.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_066 [pos=(0.00, 10.36, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass3 [pos=(0.00, 0.00, 24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    pass3 [pos=(0.00, 0.00, 40.00), layer=Default]
+      pass_002 [pos=(0.00, 0.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass3 [pos=(0.00, 0.00, 40.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    pass3 [pos=(0.00, 0.00, -24.00), layer=Default]
+      pass_002 [pos=(0.00, 0.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_066 [pos=(0.00, 10.28, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass3 [pos=(0.00, 0.00, -24.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    pass3 [pos=(24.00, 0.00, 0.00), layer=Default]
+      pass_002 [pos=(24.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      Cube_066 [pos=(24.00, 9.67, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass3 [pos=(24.00, 0.00, 0.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    pass2 [pos=(154.20, 0.00, -0.28), layer=Default]
+      pass_002 [pos=(154.20, 0.00, -0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+      pass2 [pos=(154.20, 0.00, -0.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+  08_Torches [pos=(0.00, 0.00, 0.00), layer=Default]
+    Cube.048 [pos=(-148.00, 6.00, 6.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.048 [pos=(-148.00, 6.00, -6.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.052 [pos=(-12.00, 0.00, -22.60), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.052 [pos=(12.00, 0.00, -20.76), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.052 [pos=(-12.00, 0.00, 20.60), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.052 [pos=(12.00, 0.00, 20.44), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.052 [pos=(-20.00, 0.00, 100.28), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.052 [pos=(24.42, 0.00, 100.34), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.048 [pos=(-30.00, 8.00, -72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.048 [pos=(30.00, 8.00, -72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.054 [pos=(50.20, 7.20, 6.92), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.054 [pos=(50.20, 7.20, -7.48), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.054 [pos=(74.20, 7.20, 6.92), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.054 [pos=(74.20, 7.20, -7.48), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.054 [pos=(98.20, 7.20, 6.92), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.054 [pos=(98.20, 7.20, -7.48), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+  09_Decoration [pos=(0.00, 0.00, 0.00), layer=Default]
+    Cube.056 [pos=(-85.68, 0.00, -18.52), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.056 (2) [pos=(-85.68, 0.00, 18.52), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.056 (1) [pos=(-106.76, 0.00, -18.52), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.056 (3) [pos=(-106.76, 0.00, 18.52), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.076 [pos=(-16.00, 0.00, -72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+    Cube.076 [pos=(16.00, 0.00, -72.00), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+  10_PuzzleMarkers [pos=(0.00, 0.00, 0.00), layer=Default]
+    Puzzle1_PedestalRoom_Marker [pos=(-96.00, 4.00, 0.00), layer=Default]
+    Puzzle2_SymbolChamber_Marker [pos=(0.00, 4.00, 72.00), layer=Default]
+    SymbolPanel_1_Marker [pos=(-18.00, 8.00, 101.60), layer=Default]
+    SymbolPanel_2_Marker [pos=(-6.00, 8.00, 101.60), layer=Default]
+    SymbolPanel_3_Marker [pos=(6.00, 8.00, 101.60), layer=Default]
+    SymbolPanel_4_Marker [pos=(18.00, 8.00, 101.60), layer=Default]
+    Puzzle3_PressureChamber_Marker [pos=(0.00, 4.00, -72.00), layer=Default]
+    PressurePlate_1_Marker [pos=(-16.00, 0.80, -72.00), layer=Default]
+    PressurePlate_2_Marker [pos=(16.00, 0.80, -72.00), layer=Default]
+    MovableBlock_1_Initial [pos=(-16.00, 2.00, -88.00), layer=Default]
+    MovableBlock_2_Initial [pos=(16.00, 2.00, -88.00), layer=Default]
+  11_CrownMarker [pos=(0.00, 0.00, 0.00), layer=Default]
+    Crown_Of_Eternity_Marker [pos=(84.00, 7.20, 0.00), layer=Default]
+  12_CrushingWallMarkers [pos=(0.00, 0.00, 0.00), layer=Default]
+    CrushingWall_North_Initial [pos=(152.00, 6.00, 8.00), layer=Default]
+    CrushingWall_North_Final [pos=(152.00, 6.00, 2.00), layer=Default]
+    CrushingWall_South_Initial [pos=(152.00, 6.00, -8.00), layer=Default]
+    CrushingWall_South_Final [pos=(152.00, 6.00, -2.00), layer=Default]
+  13_ExitMarker [pos=(0.00, 0.00, 0.00), layer=Default]
+    Exit_Victory_Trigger_Marker [pos=(224.00, 6.00, 0.00), layer=Default]
+Gems [pos=(-80.68, 0.50, -28.28), layer=Default]
+  Crystal [pos=(-113.21, 0.53, -26.94), layer=Default] (MeshFilter, MeshRenderer)
+  Diamond [pos=(-96.91, 0.61, 34.51), layer=Default] (MeshFilter, MeshRenderer)
+  Ruby [pos=(-80.68, 0.50, -28.28), layer=Default] (MeshFilter, MeshRenderer)
+Pedestals [pos=(0.00, 0.00, 0.00), layer=Default]
+  01 [pos=(-84.30, 0.00, -38.50), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+  01 (1) [pos=(-107.70, 0.00, -38.50), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
+  01 (2) [pos=(-95.80, 0.00, -38.50), layer=Default] (MeshFilter, MeshRenderer, MeshCollider)
