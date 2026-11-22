@@ -7,11 +7,10 @@ namespace NEDClass2024
     {
         public Transform Target;
 
-        public float Distance = 7.5f;
-
-        public float LookHeight = 3.8f;
-
-        public float ShoulderOffset = 0.4f;
+        public float Distance = 6f;
+        public float LookHeight = 2.8f;
+        public float ShoulderOffset = 0f;
+        public float LookAheadDistance = 6f;
 
         public float Sensitivity = 3f;
 
@@ -67,27 +66,37 @@ namespace NEDClass2024
             }
         }
 
+        
         private void LateUpdate()
         {
             if (Target == null) return;
 
             Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
 
-            Vector3 lookPoint = Target.position +
-                                Vector3.up * LookHeight;
+            // Camera's pivot position
+            Vector3 pivotPosition = Target.position +
+                                    Vector3.up * LookHeight;
 
+            // Camera position behind the player
             Vector3 offset = rotation *
                 new Vector3(ShoulderOffset, 0.6f, -Distance);
 
-            Vector3 desiredPosition = lookPoint + offset;
+            Vector3 desiredPosition = pivotPosition + offset;
 
+            // Aim slightly ahead of the player
+            Vector3 aimPoint = pivotPosition +
+                rotation * Vector3.forward * LookAheadDistance;
+
+            // Smooth camera movement
             transform.position = Vector3.Lerp(
                 transform.position,
                 desiredPosition,
                 FollowSpeed * Time.deltaTime
             );
 
-            transform.LookAt(lookPoint);
+            // Look towards the point ahead
+            transform.LookAt(aimPoint);
         }
+
     }
 }
