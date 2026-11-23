@@ -79,4 +79,5 @@ public class EscapeWallMover : MonoBehaviour
 
         Debug.Log("[EscapeWallMover] Walls fully closed.");
     }
+    
 }

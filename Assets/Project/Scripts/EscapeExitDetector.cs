@@ -1,15 +1,31 @@
+using System.Collections;
 using UnityEngine;
-
+using TMPro;
+using UnityEngine.SceneManagement;
+using NEDClass2024;
 public class EscapeExitDetector : MonoBehaviour
 {
-    [SerializeField] private EscapeManager escapeManager;
+    public EscapeManager escapeManager;
 
-    private void OnTriggerEnter(Collider other)
+    int playerLayer;
+
+    void Start()
     {
-        if (other.gameObject.layer != 6)
+        playerLayer = LayerMask.NameToLayer("Player");
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer != playerLayer)
+        {
             return;
-        Debug.Log("[EscapeExitDetector] Player entered exit trigger.");
-        if (escapeManager != null)
-            escapeManager.OnPlayerEscaped();
+        }
+
+        if (escapeManager == null)
+        {
+            return;
+        }
+
+        escapeManager.PlayerReachedExit();
     }
 }
