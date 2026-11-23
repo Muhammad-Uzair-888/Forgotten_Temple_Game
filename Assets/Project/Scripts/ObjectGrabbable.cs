@@ -6,7 +6,8 @@ namespace NEDClass2024
     {
         Crystal,
         Diamond,
-        Ruby
+        Ruby,
+        Crown
     }
 
     [RequireComponent(typeof(Rigidbody))]

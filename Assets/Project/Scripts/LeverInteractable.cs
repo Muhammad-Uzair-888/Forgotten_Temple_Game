@@ -16,6 +16,8 @@ public class LeverInteractable : MonoBehaviour
     public bool isPulled = false;
 
     bool isMoving = false;
+    public bool IsMoving => isMoving;
+    static LeverInteractable currentLever;
 
     void Start()
     {
@@ -31,10 +33,6 @@ public class LeverInteractable : MonoBehaviour
             if (playerObject != null)
             {
                 player = playerObject.transform;
-            }
-            else
-            {
-                Debug.LogError("[LeverInteractable] PlayerRoot not found on " + gameObject.name);
             }
         }
 
@@ -53,11 +51,26 @@ public class LeverInteractable : MonoBehaviour
             return;
         }
 
-        bool playerNear = Vector3.Distance(transform.position, player.position) < interactRadius;
+        Vector3 playerPos = player.position;
+        playerPos.y = transform.position.y;
+        bool playerNear = Vector3.Distance(transform.position, playerPos) < interactRadius;
 
-        if (promptText != null)
+        if (playerNear && !isMoving)
         {
-            promptText.gameObject.SetActive(playerNear && !isMoving);
+            currentLever = this;
+        }
+
+        if (currentLever == this)
+        {
+            if (promptText != null)
+            {
+                promptText.gameObject.SetActive(playerNear && !isMoving);
+            }
+
+            if (!playerNear)
+            {
+                currentLever = null;
+            }
         }
 
         if (playerNear && !isMoving && Input.GetKeyDown(KeyCode.E))
@@ -88,4 +101,3 @@ public class LeverInteractable : MonoBehaviour
         isMoving = false;
     }
 }
-

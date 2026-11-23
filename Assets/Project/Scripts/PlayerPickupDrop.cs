@@ -40,6 +40,17 @@ namespace NEDClass2024
 
         #endregion
 
+        #region Static Events
+
+        public static event System.Action<ObjectGrabbable> OnObjectPickedUp;
+
+        public static void RaiseObjectPickedUp(ObjectGrabbable obj)
+        {
+            OnObjectPickedUp?.Invoke(obj);
+        }
+
+        #endregion
+
         #region Unity Callbacks
 
         private void Start()
@@ -181,6 +192,7 @@ namespace NEDClass2024
                 currentHeldObject = targetedGrabbable;
                 targetedGrabbable = null;
                 Debug.Log($"[PlayerPickupDrop] Picked up: {currentHeldObject.Type}");
+                OnObjectPickedUp?.Invoke(currentHeldObject);
             }
         }
 

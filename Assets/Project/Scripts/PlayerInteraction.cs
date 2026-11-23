@@ -188,6 +188,7 @@ namespace NEDClass2024
                 currentHeldArtifact = artifact;
                 nearestArtifact = null;
                 Debug.Log($"[PlayerInteraction] Picked up artifact: {artifact.name}");
+                PlayerPickupDrop.RaiseObjectPickedUp(artifact);
             }
         }
 
