@@ -26,13 +26,15 @@ Explore an ancient temple, discover environmental clues, solve its mechanisms, c
 
 The central objective is to obtain the **Crown of Eternity** and reach the exit. The experience focuses on exploration, environmental storytelling, puzzle-solving, and a tense escape sequence.
 
-## Game Pictures
+## Game Visuals
 
 <img width="1092" height="535" alt="image" src="https://github.com/user-attachments/assets/e46fac02-4c18-43f8-9f67-8eebbc444ce1" />
 
 <img width="1089" height="523" alt="image" src="https://github.com/user-attachments/assets/c2c24e6d-fc87-4396-85d2-d40a17c94291" />
 
 <img width="1086" height="536" alt="image" src="https://github.com/user-attachments/assets/3810797e-9764-44e8-abb2-715cd7198e6d" />
+
+<img width="818" height="649" alt="image" src="https://github.com/user-attachments/assets/d8864cc3-5291-4356-a697-9ac28a6862e0" />
 
 ## Gameplay Highlights
 
