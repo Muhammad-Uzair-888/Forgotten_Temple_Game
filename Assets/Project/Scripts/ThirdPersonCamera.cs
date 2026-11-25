@@ -24,6 +24,7 @@ namespace NEDClass2024
 
         private float yaw;
         private float pitch;
+        public bool cursorLocked = false;
 
         private void Start()
         {
@@ -36,27 +37,18 @@ namespace NEDClass2024
 
             yaw = Target.eulerAngles.y;
             pitch = InitialPitch;
-
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
         }
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (cursorLocked && Input.GetKeyDown(KeyCode.Escape))
             {
+                cursorLocked = false;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
 
-            if (Cursor.lockState != CursorLockMode.Locked &&
-                Input.GetMouseButtonDown(0))
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
-
-            if (Cursor.lockState == CursorLockMode.Locked)
+            if (cursorLocked)
             {
                 yaw += Input.GetAxis("Mouse X") * Sensitivity;
 

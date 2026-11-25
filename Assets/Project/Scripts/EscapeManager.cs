@@ -157,6 +157,7 @@ public class EscapeManager : MonoBehaviour
 
     public void QuitGame()
     {
+        Debug.Log("QuitGame called");
         Application.Quit();
     }
 }
