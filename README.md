@@ -108,34 +108,6 @@ The-Forgotten-Temple-Windows/
 4. Open the project using Unity 2022.3 LTS.
 5. Wait for Unity to finish importing assets and compiling scripts.
 
-### Create a Windows build
-
-1. Open **File → Build Settings** in Unity.
-2. Select **PC, Mac & Linux Standalone**.
-3. Set the target platform to **Windows** and architecture to **x86_64** where available.
-4. Add the required game scenes to **Scenes In Build** and confirm that the correct starting scene is first.
-5. Select **Build** and choose an output folder, for example `Builds/Windows/The-Forgotten-Temple/`.
-6. After the build completes, test the executable from that output folder—not only from the Unity Editor.
-7. Test the packaged build on a separate folder or computer where possible.
-
-## Project Structure
-
-The Unity source project should have a structure similar to this:
-
-```text
-The-Forgotten-Temple/
-├── Assets/                 # Scenes, scripts, models, materials, audio and UI
-├── Packages/               # Unity package dependencies
-├── ProjectSettings/        # Unity project configuration
-├── Builds/                 # Local standalone builds (usually not committed to Git)
-│   └── Windows/
-│       └── The-Forgotten-Temple/
-│           ├── The Forgotten Temple.exe
-│           └── Unity build support files and folders
-├── README.md
-└── .gitignore
-```
-
 ## Troubleshooting
 
 | Issue | What to check |
