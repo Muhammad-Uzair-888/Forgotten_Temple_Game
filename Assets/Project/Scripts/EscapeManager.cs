@@ -19,6 +19,7 @@ public class EscapeManager : MonoBehaviour
 
     bool countdownStarted = false;
     bool escapeFinished = false;
+    public bool IsEscapeFinished => escapeFinished;
     Coroutine countdownRoutine;
 
     void Awake()
@@ -46,6 +47,15 @@ public class EscapeManager : MonoBehaviour
         if (victoryPanel != null)
         {
             victoryPanel.SetActive(false);
+        }
+        if (restartButton != null)
+        {
+            restartButton.onClick.RemoveListener(RestartLevel);
+            restartButton.onClick.AddListener(RestartLevel);
+        }
+        else
+        {
+            Debug.LogError("Restart Button is not assigned!");
         }
     }
 
