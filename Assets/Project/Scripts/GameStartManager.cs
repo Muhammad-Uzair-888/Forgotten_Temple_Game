@@ -35,7 +35,6 @@ public class GameStartManager : MonoBehaviour
 
     public void StartGame()
     {
-        Debug.Log("StartGame called");
         if (titleScreenPanel != null)
             titleScreenPanel.SetActive(false);
         if (gameplayHUD != null)

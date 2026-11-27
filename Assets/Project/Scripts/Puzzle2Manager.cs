@@ -15,6 +15,7 @@ public class Puzzle2Manager : MonoBehaviour
     public bool correctLever3 = true;
 
     public Transform doorRoot;
+    public AudioSource gateAudioSource;
     public Vector3 doorOpenOffset = new Vector3(0f, 5f, 0f);
     public float doorOpenDuration = 3f;
 
@@ -82,6 +83,10 @@ public class Puzzle2Manager : MonoBehaviour
 
         if (doorRoot != null)
         {
+            if (gateAudioSource != null && gateAudioSource.clip != null)
+            {
+                gateAudioSource.PlayOneShot(gateAudioSource.clip);
+            }
             StartCoroutine(OpenDoorRoutine());
         }
     }

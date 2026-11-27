@@ -7,12 +7,16 @@ public class EntranceDoorTrigger : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform playerRoot;
     [SerializeField] private Transform doorRoot;
+    [SerializeField] private AudioSource gateAudioSource;
 
     [Header("Door Movement")]
     [SerializeField] private Vector3 openLocalOffset =
         new Vector3(0f, 5f, 0f);
 
     [SerializeField] private float openDuration = 3f;
+
+    [Header("Gate Sound")]
+    [SerializeField] private float soundDuration = 5f;
 
     private bool hasOpened = false;
 
@@ -27,7 +31,7 @@ public class EntranceDoorTrigger : MonoBehaviour
             return;
         }
 
-        // Detect the player, including its child colliders.
+        // Detect the player, including child colliders.
         bool isPlayer =
             other.transform == playerRoot ||
             other.transform.IsChildOf(playerRoot);
@@ -36,7 +40,26 @@ public class EntranceDoorTrigger : MonoBehaviour
             return;
 
         hasOpened = true;
+
+        // Play the gate sound when opening begins.
+        if (gateAudioSource != null && gateAudioSource.clip != null)
+        {
+            gateAudioSource.Play();
+
+            StartCoroutine(StopGateSoundAfterDelay());
+        }
+
         StartCoroutine(OpenDoorRoutine());
+    }
+
+    private IEnumerator StopGateSoundAfterDelay()
+    {
+        yield return new WaitForSeconds(soundDuration);
+
+        if (gateAudioSource != null)
+        {
+            gateAudioSource.Stop();
+        }
     }
 
     private IEnumerator OpenDoorRoutine()

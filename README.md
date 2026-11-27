@@ -106,7 +106,7 @@ The-Forgotten-Temple-Windows/
 2. Open Unity Hub.
 3. Select **Add** and choose the project folder (the folder containing `Assets`, `Packages`, and `ProjectSettings`).
 4. Open the project using Unity 2022.3 LTS.
-5. Wait for Unity to finish importing assets and compiling scripts.
+5. Wait for Unity to finish importing assets and compiling scripts.                             
 
 ## Troubleshooting
 

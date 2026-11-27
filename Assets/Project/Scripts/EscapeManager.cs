@@ -1,16 +1,21 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using NEDClass2024;
 public class EscapeManager : MonoBehaviour
 {
+    [Header("Game Over UI")]
+    [SerializeField] private Button restartButton;
     public EscapeWallMover wallMover;
     public TextMeshProUGUI countdownText;
     public GameObject gameOverPanel;
     public GameObject victoryPanel;
-    public float countdownDuration = 10f;
+    public float countdownDuration = 15f;
     public PlayerMovement playerMovement;
+    public ThirdPersonCamera thirdPersonCamera;
+    public GuardianChase guardian;
 
     bool countdownStarted = false;
     bool escapeFinished = false;
@@ -60,9 +65,9 @@ public class EscapeManager : MonoBehaviour
         Debug.Log("Crown picked up");
         Debug.Log("Countdown started");
 
-        if (wallMover != null)
+        if (guardian != null && playerMovement != null)
         {
-            wallMover.StartClosing();
+            guardian.Awaken(playerMovement.transform);
         }
 
         countdownRoutine = StartCoroutine(CountdownRoutine());
@@ -93,24 +98,60 @@ public class EscapeManager : MonoBehaviour
             yield break;
         }
 
+        if (wallMover != null)
+        {
+            wallMover.StartClosing();
+        }
+
+        TriggerGameOver();
+    }
+
+    public void TriggerGameOver()
+    {
+        if (escapeFinished)
+        {
+            return;
+        }
+
         escapeFinished = true;
+
+        if (countdownRoutine != null)
+        {
+            StopCoroutine(countdownRoutine);
+            countdownRoutine = null;
+        }
+
+        if (guardian != null)
+        {
+            guardian.StopChase();
+        }
+
+        if (playerMovement != null)
+        {
+            playerMovement.enabled = false;
+        }
+
+        if (thirdPersonCamera != null)
+        {
+            thirdPersonCamera.cursorLocked = false;
+            thirdPersonCamera.enabled = false;
+        }
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
         if (countdownText != null)
         {
             countdownText.gameObject.SetActive(false);
         }
 
-        if (wallMover != null)
-        {
-            wallMover.StopClosing();
-        }
-
         if (gameOverPanel != null)
         {
+            gameOverPanel.transform.SetAsLastSibling();
             gameOverPanel.SetActive(true);
         }
 
-        Debug.Log("Countdown finished, player failed");
+        Debug.Log("Game Over");
     }
 
     public void PlayerReachedExit()
@@ -125,6 +166,20 @@ public class EscapeManager : MonoBehaviour
         {
             playerMovement.enabled = false;
         }
+
+        if (guardian != null)
+        {
+            guardian.StopChase();
+        }
+
+        if (thirdPersonCamera != null)
+        {
+            thirdPersonCamera.cursorLocked = false;
+            thirdPersonCamera.enabled = false;
+        }
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
         if (countdownRoutine != null)
         {
@@ -152,7 +207,8 @@ public class EscapeManager : MonoBehaviour
     public void RestartLevel()
     {
         Debug.Log("Restarting level");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void QuitGame()
